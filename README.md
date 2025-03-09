@@ -2,6 +2,8 @@
 
 Automating Excel Online with Playwright and TypeScript: Verifying that the date returned by Excel’s TODAY function matches the current date.
 
+Framework Walkthrough: https://drive.google.com/file/d/14SY1tUBvBsT3e_n7uqjWtp2RnXjCBuZu/view?usp=sharing
+
 ## Installation
 
 Use npm to install the contents of package.json
