@@ -1,0 +1,22 @@
+{
+  "name": "excel-online-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "playwright-run": "SALT='2025March';npx playwright test tests/excel_online.spec.ts --headed",
+    "encrypt-credentials": "SALT='2025March';ts-node index.ts",
+    "playwright-run-all": "SALT='2025March';npx playwright test --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.51.0",
+    "@types/node": "^22.13.9",
+    "crypto-js": "^4.2.0"
+  },
+  "dependencies": {
+    "@types/crypto-js": "^4.2.2"
+  }
+}
