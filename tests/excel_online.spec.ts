@@ -66,6 +66,6 @@ test.describe("Excel online test", () => {
     // Test the TODAY() function
     const isCorrectDate = await excelPage.verifyTodayFunction(excelTab);
     expect(isCorrectDate).toBeTruthy();
-    await context.close();
+    // await context.close();
   });
 });

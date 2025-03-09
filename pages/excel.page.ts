@@ -63,10 +63,15 @@ export class ExcelPage extends BasePage {
     if (!frame) {
       return null;
     }
-    await frame.waitForSelector("div.ms-Tooltip-subtext>span", {
-      timeout: 5000,
-    });
-    return await frame.locator("div.ms-Tooltip-subtext>span").innerText();
+    await frame.waitForSelector(
+      "div.ms-Tooltip-subtext>span,p.ms-Tooltip-subtext",
+      {
+        timeout: 5000,
+      }
+    );
+    return await frame
+      .locator("div.ms-Tooltip-subtext>span,p.ms-Tooltip-subtext ")
+      .innerText();
   }
 
   /**
